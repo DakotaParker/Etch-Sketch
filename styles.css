@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Luckiest+Guy&family=Monofett&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Puddles&family=Schoolbell&family=Sixtyfour+Convergence&family=Titan+One&display=swap');
+/* 
+
+                            Page background
+
+                                                                         */
+*{
+    margin: 0px;
+}
+.pageContainer {
+    background-image: url(https://i.pinimg.com/474x/89/ba/fc/89bafc3a3ae00ac3b0bd13732b648c58.jpg);
+    height: 100vh;
+    width: 100vw;
+    content: '';
+    isolation: isolate;
+    background-size: 100vh;
+    display: grid;
+    background-position: center;
+    position: relative;
+ 
+}
+
+.pageContainer::after {
+   content: '';
+   position: absolute;
+   background-color: rgb(177, 177, 177);
+   inset: 0;
+   z-index: -1;
+   opacity: .1
+}
+
+                                                                    /*   
+
+                            Heading
+
+                                                                        */
+.headingText {
+    color: rgb(255, 238, 0);
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    text-align: center;
+    font-family: Rubik Puddles;
+    
+    
+
+    
+}
+.headingContainer {
+
+    justify-content: center;
+    align-content: center;
+    margin-left: 12vw;
+    margin-right: 15vw;
+    border-radius: 2vh;
+    height: 14vh;
+    background-color: rgba(17, 6, 17, 0.562);
+}
+                                                                /*          
+                            Body of page
+
+                                                                    */
+.bodyContainer{
+    height: 652px;
+    bottom: 0px;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.board {
+    width: 53.1vw;
+    height: 600px;
+    display: grid;
+    position:relative;
+    left: 21.8vw;
+    border: 2px solid black;
+    border-radius: 1%;
+    
+}
+.pad {
+    z-index: -2;
+    position: absolute;
+    top: 51%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    height: 65.5vh;
+    padding-top: 3vh;
+    width: 53.6vw;
+    } 
+
+.padUI { 
+    padding-top: -200px;
+    display: flex;
+    
+}
+.square {
+    background-color: lightgray;
+    transition: background-color 0.3s;
+}
+
+                                                                        /*
+
+                                Buttons
+
+                                                                        */
+
+#start {
+    position:fixed;
+    left: 29vw;
+    top: 91vh;
+    width: clamp(60px, 2vw, 2vw);
+    height: 3vh;
+    
+}
+#size {
+    position:absolute;
+    left: 52vw;
+    top: 91vh;
+    width: clamp(60px, 3vw, 6vw);
+    height: 3vh;
+    cursor: pointer;
+}
+ .placeholder {
+    position:absolute;
+    top: 88vh;
+    left: 52vw;
+    height: 2.5vh;
+    width: clamp(67px, 15vw, 200px);
+    
+}

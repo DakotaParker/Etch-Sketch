@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">\
+    
+</head>
+<body>
+<!------------Make page a container with a background img--------------->
+
+   <div class="pageContainer">
+
+<!--------Inside "pageContainer" created a div "headingContainer"------->
+            
+            <div class="headingContainer"><h1 class="headingText">Etch-A-Sketch</h1></div>
+
+<!----------- Close the "headingContainer" making a section ------------->
+
+<!---------------Made a container for the body of the page---------------->
+                
+                <div class="bodyContainer">
+
+ <!-----------------Inside "bodyContainer" created a div to make a board and set a image for the board background and a start button ----------------------------------------------------------------------->
+                    
+                    <div class="board"></div>
+                        <img class="pad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrDw7W10QYdR1wDvIhfy11sI42Ip3diVqJa_meFlc_9f97R62NELEGrdK5eKpUGbWUzk&usqp=CAU">
+                    <button id="start">Start</button>
+
+                </div>
+
+<!-------------------Closing the "bodyContainer" div----------------------->
+
+<!----------Created a div for the board UI to change the board size-------->
+
+                <div class="padUI">
+
+<!--------------------------------------------------------------------------Inside the "padUI" div i made a form with a placeholder to request the user to give the board a unique size and a button to confirm choice          -------------------------------------------------------------------------->                         <form name="size1">
+                            <input type="text" placeholder="Size of board" class="placeholder" onchange="changeSize(this.value)">
+                        </form>
+                    <button id="size">Size</button>
+   
+                </div>
+
+<!-----------------------Closed the "PadUI" div---------------------------->
+
+   <script src="index.js"></script>
+   
+</div>
+
+<!------------------Close the main "pageContainer" div--------------------->
+</body>
+</html>
